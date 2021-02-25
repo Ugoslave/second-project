@@ -1,11 +1,11 @@
-const adBlock = document.querySelector('.ad-block');
-const descriptionBlock = document.querySelector('.description');
-const headerBlock = document.querySelector('.header');
+const pageBackground = document.querySelector('.page');
 
 function handleAdBlock(item) {
-  item.classList.add('ad-block_active');
+  pageBackground.classList.toggle(item);
 }
 
-setTimeout(handleAdBlock, 1000, adBlock);
-setTimeout(handleAdBlock, 2500, descriptionBlock);
-setTimeout(handleAdBlock, 7500, headerBlock);
+
+setTimeout(handleAdBlock, 6000, 'page__background_first');
+setTimeout(handleAdBlock, 12000, 'page__background_second');
+setTimeout(handleAdBlock, 18000, 'page__background_third');
+setTimeout(handleAdBlock, 24000, 'page__background_four');

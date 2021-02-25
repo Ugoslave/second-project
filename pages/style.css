@@ -21,7 +21,7 @@
   max-width: 1280px;
   min-height: 100vh;
   font-family: 'Inter', 'Arial', sans-serif;
-  background-image: url(../images/background-2.jpg);
+  background-image: url(../images/Texture-6.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,6 +33,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+.page__background_first {
+  background-image: url(../images/Texture-1.jpg);
+}
+
+.page__background_second {
+  background-image: url(../images/Texture-2.jpg);
+}
+
+.page__background_third {
+  background-image: url(../images/Texture-3.jpg);
+}
+
+.page__background_four {
+  background-image: url(../images/Texture-5.jpg);
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
