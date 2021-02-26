@@ -1,11 +1,16 @@
 const pageBackground = document.querySelector('.page');
 
-function handleAdBlock(item) {
-  pageBackground.classList.toggle(item);
+const backImagesArray = [
+  'page__background_first', 
+  'page__background_second', 
+  'page__background_third', 
+  'page__background_four', 
+  'page__background_five'
+];
+
+function handleRandomBackground(item) {
+  let index = Math.floor(Math.random()*item.length);
+  pageBackground.classList.toggle(item[index]);
 }
 
-
-setTimeout(handleAdBlock, 6000, 'page__background_first');
-setTimeout(handleAdBlock, 12000, 'page__background_second');
-setTimeout(handleAdBlock, 18000, 'page__background_third');
-setTimeout(handleAdBlock, 24000, 'page__background_four');
+setInterval(handleRandomBackground, 4000, backImagesArray);

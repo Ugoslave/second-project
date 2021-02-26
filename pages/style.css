@@ -33,22 +33,32 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  transition: background-image 2s ease-in-out;
 }
 
 .page__background_first {
   background-image: url(../images/Texture-1.jpg);
+  transition: background-image 2s ease-in-out;
 }
 
 .page__background_second {
   background-image: url(../images/Texture-2.jpg);
+  transition: background-image 2s ease-in-out;
 }
 
 .page__background_third {
   background-image: url(../images/Texture-3.jpg);
+  transition: background-image 2s ease-in-out;
 }
 
 .page__background_four {
   background-image: url(../images/Texture-5.jpg);
+  transition: background-image 2s ease-in-out;
+}
+
+.page__background_five {
+  background-image: url(../images/Texture-6.jpg);
+  transition: background-image 2s ease-in-out;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -64,9 +74,6 @@
   margin: 0;
   padding-left: 80px;
   padding-top: 40px;
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 2s, opacity 2s ease-in-out;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -77,15 +84,15 @@
 
 .title {
   margin: 0;
-  border: outset #FFD700 7px;
-  max-width: 600px;
+  border: ridge #40E0D0 3px;
+  max-width: 300px;
   font-weight: 900;
-  font-size: 36px;
-  line-height: calc(76 / 60);
+  font-size: 18px;
+  line-height: calc(76 / 50);
   text-align: center;
-  color: yellow;
+  color: #7FFFD4;
   box-sizing: border-box;
-  text-shadow: #000 3px 3px 5px;
+  text-shadow: #000 3px 2px 5px;
   box-shadow: #000 5px 5px 5px;
 }
 
@@ -108,12 +115,12 @@
 
 .subtitle {
   margin: 0;
-  max-width: 600px;
+  max-width: 300px;
   font-weight: bold;
   font-size: 16px;
   line-height: calc(76 / 72);
   text-align: center;
-  color: yellow;
+  color: #7FFFD4;
   text-shadow: #000 3px 3px 5px;
 }
 
@@ -145,9 +152,6 @@
   background-color: rgba(255, 250, 205, .7);
   border-radius: 20px;
   box-shadow: #000 5px 5px 5px;
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 2s, opacity 2s ease-in-out;
 }
 
 .ad-block:hover {
@@ -203,14 +207,6 @@
   background-color: rgba(255, 250, 205, .7);
   border-radius: 20px;
   box-shadow: #000 5px 5px 5px;
-  opacity: 0;
-  visibility: hidden;
-  transition: visibility 2s, opacity 2s ease-in-out;
-}
-
-.ad-block_active {
-  visibility: visible;
-  opacity: 1;
 }
 
 .description:hover {
