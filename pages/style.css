@@ -131,6 +131,14 @@
   }
 }
 
+.intro {
+  margin: 0;
+  box-sizing: border-box;
+  border: solid red 1px;
+  display: flex;
+  justify-content: center;
+}
+
 .marketing {
   margin: 0;
   padding: 0;
@@ -140,56 +148,52 @@
   align-items: center;
 }
 
-.ad-block {
+.intro__block {
   margin: 0;
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  height: 15vh;
+  margin-top: 50px;
+  width: 70%;
   box-sizing: border-box;
-  background-color: rgba(255, 250, 205, .7);
+  background-color: rgba(60, 179, 113, .7);
   border-radius: 20px;
   box-shadow: #000 5px 5px 5px;
 }
 
-.ad-block:hover {
+.intro__block:hover {
   animation: scale 1s ease 1 alternate forwards;
   cursor: pointer;
 }
 
 @media screen and (min-width: 425px) and (max-width: 650px) {
-  .ad-block {
+  .intro__block {
     width: 400px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
-  .ad-block {
+  .intro__block {
     max-width: 300px;
     height: 12vh;
   }
 }
 
-.ad-block__text {
+.intro__text {
   margin: 0;
   font-weight: bold;
   font-size: 50px;
   line-height: calc(76 / 72);
   text-align: center;
-  color: yellow;
+  color: #F0FFF0;
   text-shadow: #000 2px 2px 5px;
 }
 
 @media screen and (min-width: 425px) and (max-width: 650px) {
-  .ad-block__text {
+  .intro__text {
     font-size: 34px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
-  .ad-block__text {
+  .intro__text {
     font-size: 26px;
   }
 }
