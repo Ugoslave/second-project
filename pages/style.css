@@ -69,7 +69,7 @@
     justify-content: center;
   }
 }
-
+/*
 .header {
   margin: 0;
   padding-left: 80px;
@@ -130,7 +130,7 @@
     font-size: 12px;
   }
 }
-
+*/
 .intro {
   margin: 0;
   box-sizing: border-box;
@@ -143,7 +143,7 @@
   margin-top: 50px;
   width: 70%;
   box-sizing: border-box;
-  background-color: rgba(60, 179, 113, .7);
+  background-color: rgba(245, 255, 250, .7);
   border-radius: 30px;
   box-shadow: #000 5px 5px 5px;
 }
@@ -172,8 +172,8 @@
   font-size: 50px;
   line-height: calc(76 / 62);
   text-align: center;
-  color: #F0FFF0;
-  text-shadow: #000 2px 2px 5px;
+  color: #000;
+  /*text-shadow: #000 2px 2px 5px;*/
 }
 
 @media screen and (min-width: 425px) and (max-width: 650px) {
@@ -191,7 +191,6 @@
 .cards {
   padding: 0 80px 50px 80px; 
   box-sizing: border-box;
-  border: solid green 1px;
   margin: 0 auto;
   display: flex;
   align-items: baseline;
@@ -205,13 +204,13 @@
   padding: 10px;
   margin-top: 50px;
   width: 500px;
-  min-height: 300px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   background-color: rgba(245, 255, 250, .7);
   border-radius: 10px;
-  box-shadow: lime 7px 7px 10px;
+  /*box-shadow: #00FFFF 7px 7px 10px;*/
 }
 
 .card:hover {
@@ -232,8 +231,8 @@
 
 .card__title {
   margin: 0;
-  color: yellow;
-  text-shadow: green 1px 1px 5px;
+  color: #000;
+  /*text-shadow: green 1px 1px 5px;*/
   font-weight: bold;
   font-size: 28px;
   line-height: calc(76 / 72);
@@ -242,10 +241,10 @@
 
 .card__list {
   margin: 0;
-  color: yellow;
+  color: #000;
   list-style-type: square;
-  list-style-image: linear-gradient(#006600 0%, #00ff00 100%);
-  text-shadow: green 1px 1px 5px;
+  list-style-image: linear-gradient(90deg, rgba(139,69,19,1) 0%, rgba(111,56,16,1) 35%, rgba(207,133,80,1) 100%);
+  /*text-shadow: green 1px 1px 5px;*/
   font-weight: bold;
   font-size: 24px;
   line-height: calc(76 / 72);
